@@ -1,8 +1,3 @@
-import sys
-import os
-from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QFileDialog, QMessageBox
-from PyQt5.QtGui import QPixmap
-from PyQt5 import uic
 import sqlite3
 
 class DBUtils:

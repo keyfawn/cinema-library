@@ -85,7 +85,7 @@ class Window(QMainWindow):
         genre = DBUtils('cinema.db')
         self.genre.setText(f'Жанр: {genre.create_execute(f"SELECT title FROM genre WHERE id = {cinema[1]}")[0][0]}')
         self.year.setText(f'Год: {cinema[2]}')
-        self.description.setText(cinema[3])
+        self.description.setPlainText(cinema[3])
 
     def openWindow_AddCinema(self):
         self.window = AddCinema()
