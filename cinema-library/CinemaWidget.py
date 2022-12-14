@@ -1,0 +1,51 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(700, 500)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
+        Form.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(12)
+        Form.setFont(font)
+        self.widget = QtWidgets.QWidget(Form)
+        self.widget.setGeometry(QtCore.QRect(19, 19, 661, 461))
+        self.widget.setObjectName("widget")
+        self.nameCinema = QtWidgets.QLabel(self.widget)
+        self.nameCinema.setGeometry(QtCore.QRect(10, 20, 271, 31))
+        self.nameCinema.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.nameCinema.setObjectName("nameCinema")
+        self.pici = QtWidgets.QLabel(self.widget)
+        self.pici.setGeometry(QtCore.QRect(30, 60, 266, 400))
+        self.pici.setObjectName("pici")
+        self.genre = QtWidgets.QLabel(self.widget)
+        self.genre.setGeometry(QtCore.QRect(350, 20, 311, 31))
+        self.genre.setObjectName("genre")
+        self.year = QtWidgets.QLabel(self.widget)
+        self.year.setGeometry(QtCore.QRect(350, 80, 311, 31))
+        self.year.setObjectName("year")
+        self.plainTextEdit = QtWidgets.QPlainTextEdit(self.widget)
+        self.plainTextEdit.setGeometry(QtCore.QRect(353, 150, 311, 251))
+        self.plainTextEdit.setReadOnly(True)
+        self.plainTextEdit.setObjectName("plainTextEdit")
+        self.pushButton = QtWidgets.QPushButton(self.widget)
+        self.pushButton.setGeometry(QtCore.QRect(410, 420, 191, 41))
+        self.pushButton.setObjectName("pushButton")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.nameCinema.setText(_translate("Form", "Название кино"))
+        self.pici.setText(_translate("Form", "Картинка"))
+        self.genre.setText(_translate("Form", "Жанр"))
+        self.year.setText(_translate("Form", "Год"))
+        self.pushButton.setText(_translate("Form", "Смотреть"))

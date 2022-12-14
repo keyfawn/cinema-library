@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>490</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>О программе</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QLabel" name="about_prog">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>О программе:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="all">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>461</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Кинотека - это программа, в которой можно хранить свои
+фильмы, мультфильмы. Есть возможность добавлять кино при
+нажатии Ctrl + A, изменить выбранный фильм с помощью
+Ctrl + E и удалить выделенный мультфильм - Ctrl + D.
+Имеется возможность отсортировать список названий
+фильмов.</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="author">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>320</y>
+     <width>401</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Автор:     █▀ ▄▀█ █░█ █ █▄░█   █▀█ █░░ █▀▀ █▀▀
+                 ▄█ █▀█ ▀▄▀ █ █░▀█   █▄█ █▄▄ ██▄ █▄█</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
